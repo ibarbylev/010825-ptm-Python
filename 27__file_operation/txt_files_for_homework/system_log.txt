@@ -1,0 +1,73 @@
+E   django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+E       Is the server running on that host and accepting TCP/IP connections?
+============================================================= warnings summary ==============================================================
+shop/tests/test_order.py::TestOrder::test_total_price_recalculates_on_item_change
+  /home/su/DjangoProjects/jr_project_db/.venv/lib/python3.12/site-packages/django/db/backends/postgresql/base.py:512: RuntimeWarning: Normally Django will use a connection to the 'postgres' database to avoid running initialization queries against the production database when it's not needed (for example, when running tests). Django was unable to create a connection to the 'postgres' database and will use the first PostgreSQL database instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================== short test summary info ==========================================================
+error shop/tests/test_order.py::TestOrder::test_total_price_recalculates_on_item_change - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_order.py::TestOrder::test_order_id_generated_on_pending - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_order.py::TestOrder::test_old_pending_orders_deleted - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_payment.py::TestPayment::test_payment_not_allowed_for_cart - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_payment.py::TestPayment::test_changing_order_status_on_paid - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_payment.py::TestPayment::test_balance_decreased_after_payment - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_payment.py::TestPayment::test_auto_payment_of_multiple_pending_orders - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_product.py::TestProduct::test_product_creation - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_product.py::TestProduct::test_product_search_by_name - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_product.py::TestProduct::test_product_filter_by_stock - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_product.py::TestProduct::test_edit_product_specs - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_review.py::TestReview::test_add_review - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_review.py::TestReview::test_review_factory - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_review.py::TestReview::test_reviews_are_listed_correctly - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_review.py::TestReview::test_review_links_to_product_and_user - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_signals_and_jobs.py::TestSystemSignalsAndJobs::test_generate_order_id_on_pending_transition - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_signals_and_jobs.py::TestSystemSignalsAndJobs::test_auto_payment_trigger_on_pending - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_signals_and_jobs.py::TestSystemSignalsAndJobs::test_auto_payment_trigger_on_balance_increase - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_signals_and_jobs.py::TestSystemSignalsAndJobs::test_cart_auto_deletion - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_signals_and_jobs.py::TestSystemSignalsAndJobs::test_pending_order_auto_deletion - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error shop/tests/test_signals_and_jobs.py::TestSystemSignalsAndJobs::test_auto_delete_expired_tokens - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error user/tests/test_user_profile.py::TestUserProfile::test_get_balance_returns_correct_value - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error user/tests/test_user_profile.py::TestUserProfile::test_cart_is_created_automatically - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error user/tests/test_user_profile.py::TestUserProfile::test_cart_auto_deleted_after_7_days - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error user/tests/test_user_profile.py::TestUserProfile::test_get_unpaid_orders_returns_only_pending_orders - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error user/tests/test_user_profile.py::TestUserProfile::test_get_cart_returns_existing_cart - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error user/tests/test_user_profile.py::TestUserProfile::test_cart_created_if_none_exists - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error user/tests/test_user_token.py::TestUserToken::test_generate_and_validate_email_token - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error user/tests/test_user_token.py::TestUserToken::test_expired_token_becomes_invalid - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error user/tests/test_user_token.py::TestUserToken::test_revoke_token - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error user/tests/test_user_token.py::TestUserToken::test_cleanup_expired_tokens - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
+error user/tests/test_user_token.py::TestUserToken::test_multiple_token_types - django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+        Is the server running on that host and accepting TCP/IP connections?
