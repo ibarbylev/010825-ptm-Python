@@ -1,0 +1,1 @@
+FastAPI variant: [https://github.com/ibarbylev/films_project_FastAPI](https://github.com/ibarbylev/films_project_FastAPI)
